@@ -1,17 +1,18 @@
 {
   "name": "nucleus-dark-ui",
   "theme": "ui",
-  "version": "0.12.3",
-  "description": "An adaptable UI with your favorite syntax theme at its core!",
+  "version": "0.12.4",
+  "description": "An adaptable UI with your favorite syntax theme at its core! Now in works for Pulsar!",
   "keywords": [
     "dark",
     "adaptive",
     "ui"
   ],
-  "repository": "https://github.com/ignism/nucleus-dark-ui",
+  "repository": "https://github.com/minteeaa/nucleus-dark-ui",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.13.0 <2.0.0"
+    "atom": ">=1.13.0 <2.0.0",
+    "pulsar": ">=1.115.0"
   },
   "dependencies": {}
 }

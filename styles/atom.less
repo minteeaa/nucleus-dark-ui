@@ -20,7 +20,7 @@ status-bar {
   z-index: +1000;
 
   span {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
   }
 }
 
@@ -50,63 +50,62 @@ kbd {
 }
 // Scrollbars ------------------------------------------------------------------
 
-.scrollbars-visible-always {
-  /deep/::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
-  /deep/::-webkit-scrollbar-track {
-    background: @scrollbar-background-color;
-  }
+::-webkit-scrollbar-track {
+  background: @scrollbar-background-color;
+}
 
-  /deep/::-webkit-scrollbar-corner {
-    background: @scrollbar-background-color;
-  }
+::-webkit-scrollbar-corner {
+  background: @scrollbar-background-color;
+}
 
-  /deep/::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    border: 3px solid @scrollbar-background-color;
-    background: @scrollbar-color;
-    background-clip: content-box;
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border: 3px solid @scrollbar-background-color;
+  background: @scrollbar-color;
+  background-clip: content-box;
 
-    &:active,
-    &:hover {
-      border-width: 1px;
-    }
-  }
-
-
-  atom-panel-container.bottom,
-  atom-text-editor {
-    /deep/::-webkit-scrollbar-track {
-      background: @base-background-color;
-    }
-
-    /deep/::-webkit-scrollbar-corner {
-      background: @base-background-color;
-    }
-
-    /deep/::-webkit-scrollbar-thumb {
-      border-color: @base-background-color;
-      background: @scrollbar-color;
-    }
+  &:active,
+  &:hover {
+    border-width: 1px;
   }
 }
+
+
+atom-panel-container.bottom,
+atom-text-editor {
+  ::-webkit-scrollbar-track {
+    background: @base-background-color;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: @base-background-color;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-color: @base-background-color;
+    background: @scrollbar-color;
+  }
+}
+
 
 // docks
 atom-dock {
   .atom-dock-toggle-button {
-    .atom-dock-toggle-button-inner {
-      border: 0;
+  .atom-dock-toggle-button-inner {
+    border: 0;
 
-      &.left,
-      &.right {
-        .icon {
-          margin-top: 1px;
-        }
-      }
+    &.left,
+    &.right {
+    .icon {
+      margin-top: 1px;
     }
+    }
+  }
   }
 }
 
@@ -115,11 +114,11 @@ atom-dock {
   &-DialogInputs,
   &-DialogButtons,
   &-DialogLabel {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
   }
 
   &-Panel:not(.is-empty):not(.no-repository) {
-    background: @tool-panel-background-color;
+  background: @tool-panel-background-color;
   }
 }
